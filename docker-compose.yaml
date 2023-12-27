@@ -19,8 +19,11 @@ services:
       context: ./php
     ports:
       - 8080:80
+      - 8443:443
     volumes:
       - ./apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./apache/default-ssl.conf:/etc/apache2/sites-enabled/000-default-ssl.conf
+      - ./etc/ssl:/etc/ssl
       - ./app:/var/www
     depends_on:
       - database
