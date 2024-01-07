@@ -38,7 +38,8 @@ Vous trouverez le **schéma de base de données** ici : https://drawsql.app/team
 
 1. [Présentation et configuration du projet](https://www.youtube.com/watch?v=isyfqqizOGI&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/b27fccc6600867f5371a272a7b708037bd725e52))
 2. [Introduction sur les contrôleurs](https://www.youtube.com/watch?v=WRg6msiB87g&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/3f1f388484a3e437af17601ee8084ed5149821a8))
-3. A venir
+3. [Les templates et Assets](https://www.youtube.com/watch?v=TfESYhlcIrU&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/3f1f388484a3e437af17601ee8084ed5149821a8))
+4. A venir
 
 ## Maquettes
 
