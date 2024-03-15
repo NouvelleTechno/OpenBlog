@@ -1,0 +1,6 @@
+<h1>Activation de votre compte sur Openblog</h1>
+<p>Bonjour {{ user.nickname }},</p>
+<p>Pour activer votre compte sur OpenBlog cliquez sur le lien ci-dessous.</p>
+<p><a href="{{ absolute_url(path('verify_user', {token: token})) }}">Lien</a></p>
+{{ token }}
+<p>Merci</p>

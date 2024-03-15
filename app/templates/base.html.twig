@@ -17,6 +17,12 @@
     <body>
         {% include "_partials/_navbar.html.twig" %}
 
+        {% for messages in app.flashes %}
+            {% for message in messages %}
+                <p>{{ message|raw }}</p>
+            {% endfor %}
+        {% endfor %}
+
         {% block body %}{% endblock %}
 
         {% include "_partials/_footer.html.twig" %}

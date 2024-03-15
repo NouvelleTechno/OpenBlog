@@ -38,3 +38,10 @@ services:
       UPLOAD_LIMIT: 20M
     ports:
       - 8899:80
+  mailhog:
+    image: mailhog/mailhog
+    logging:
+      driver: 'none'
+    ports:
+      - 1025:1025 #SMTP
+      - 8025:8025 #Boite mail
