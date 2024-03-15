@@ -41,7 +41,7 @@ Vous trouverez le **schéma de base de données** ici : https://drawsql.app/team
 3. [Les templates et Assets](https://www.youtube.com/watch?v=TfESYhlcIrU&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/f0f6fc7aabded4f223148ad2d3333fa6ac700041))
 4. [Création de la base de données](https://www.youtube.com/watch?v=SM1TZuvAs-M&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/f35223baf26b3a06d8d1ca87557d810fd3bf2c39))
 5. [Inscription et Authentification des utilisateurs](https://www.youtube.com/watch?v=zXCeT2dGUOY&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/61072795e6b6030de97fc495b4bb73bdbfb05234))
-6. [Envoi du mail de confirmation du compte des utilisateurs](https://www.youtube.com/watch?v=p3Fr6ekX3Fo&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/61072795e6b6030de97fc495b4bb73bdbfb05234))
+6. [Envoi du mail de confirmation du compte des utilisateurs](https://www.youtube.com/watch?v=p3Fr6ekX3Fo&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/b6e4588c46824c2dce2ce23fd8d5940bdc529a8f))
 7. A venir
 
 ## Maquettes
