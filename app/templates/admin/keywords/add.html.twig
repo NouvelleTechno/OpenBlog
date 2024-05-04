@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un mot clé{% endblock %}
+
+{% block body %}
+    <h1>Ajouter un mot-clé</h1>
+    {{ form_start(keywordForm) }}
+        {{ form_row(keywordForm.name) }}
+        <button type="submit">Ajouter</button>
+    {{ form_end(keywordForm) }}
+{% endblock %}
