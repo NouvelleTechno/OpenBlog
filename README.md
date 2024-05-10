@@ -44,7 +44,8 @@ Vous trouverez le **schéma de base de données** ici : https://drawsql.app/team
 6. [Envoi du mail de confirmation du compte des utilisateurs](https://www.youtube.com/watch?v=p3Fr6ekX3Fo&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/b6e4588c46824c2dce2ce23fd8d5940bdc529a8f))
 7. [Réinitialisation du mot de passe des utilisateurs](https://www.youtube.com/watch?v=JbAgml9lqtk&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/bf45f72a699ac83ba7c145dbd051b5d9120b188c))
 8. [Création des formulaires](https://www.youtube.com/watch?v=wIt2MIeHZSs&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/443bdf123b49c4ac1866e04c95d6e793a95210b1))
-9. A venir
+9. [Les Datafixtures](https://www.youtube.com/watch?v=SY3ivIptFiE&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/d18c441b1640736929a480a86a72a5a80c48d733))
+10. A venir
 
 ## Maquettes
 
