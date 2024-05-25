@@ -9,3 +9,15 @@ body{
     align-items: center;
     padding: 10px;
 }
+
+.text{
+    &-red{
+        color: red;
+    }
+    &-orange{
+        color: orange;
+    }
+    &-green{
+        color: green;
+    }
+}

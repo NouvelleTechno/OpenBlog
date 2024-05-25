@@ -2,6 +2,10 @@
 
 {% block title %}M'inscrire{% endblock %}
 
+{% block importmap %}
+    {{ importmap(['app', 'register']) }}
+{% endblock %}
+
 {% block body %}
     <h1>M'inscrire</h1>
 
@@ -18,12 +22,15 @@
             {{ form_row(registrationForm.plainPassword, {
                 label: 'Password'
             }) }}
+            <div>
+                <p>Complexité du mot de passe : <span id="entropy" class="text-red">Très faible</span> (la complexité minimale acceptée est "Fort")</p>
+            </div>
         </div>
         <div>
             {{ form_row(registrationForm.agreeTerms) }}
         </div>
 
-        <button type="submit" class="btn">M'inscrire</button>
+        <button type="submit" class="btn" id="submit-button" disabled>M'inscrire</button>
     {{ form_end(registrationForm) }}
     <p>Déjà inscrit(e) ? <a href="{{ path('app_login') }}">Me connecter</a></p>
 {% endblock %}
