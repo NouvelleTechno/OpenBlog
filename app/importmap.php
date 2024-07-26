@@ -22,6 +22,10 @@ return [
         'path' => './assets/js/register.js',
         'entrypoint' => true,
     ],
+    'add-article' => [
+        'path' => './assets/js/addArticle.js',
+        'entrypoint' => true,
+    ],
     '@hotwired/stimulus' => [
         'version' => '3.2.2',
     ],

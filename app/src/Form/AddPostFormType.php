@@ -34,6 +34,9 @@ class AddPostFormType extends AbstractType
             ->add('featuredImage', FileType::class, [
                 'label' => 'Image de l\'article',
                 'mapped' => false,
+                'attr' => [
+                    'accept' => 'image/png, image/jpeg, image/webp'
+                ],
                 'constraints' => [
                     new Image(
                         minWidth: 200,
@@ -43,7 +46,8 @@ class AddPostFormType extends AbstractType
                         allowPortrait: false,
                         mimeTypes: [
                             'image/jpeg',
-                            'image/png'
+                            'image/png',
+                            'image/webp'
                         ]
                     )
                 ]

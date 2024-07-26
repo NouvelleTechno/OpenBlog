@@ -2,12 +2,20 @@
 
 {% block title %}Ajouter un article{% endblock %}
 
+{% block importmap %}
+    {{ importmap(['app', 'add-article']) }}
+{% endblock %}
+
+
 {% block body %}
     <h1>Ajouter un article</h1>
     {{ form_start(form) }}
         {{ form_row(form.title) }}
         {{ form_row(form.content) }}
         {{ form_row(form.featuredImage) }}
+        <div class="preview">
+            <img src="" alt="" width="300">
+        </div>
         {{ form_row(form.categories) }}
         {{ form_row(form.keywords) }}
         <button type="submit">Ajouter</button>
