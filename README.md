@@ -47,7 +47,8 @@ Vous trouverez le **schéma de base de données** ici : https://drawsql.app/team
 9. [Les Datafixtures](https://www.youtube.com/watch?v=SY3ivIptFiE&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/d18c441b1640736929a480a86a72a5a80c48d733))
 10. [Validation des formulaires](https://www.youtube.com/watch?v=AYdpze6wS4Y&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/519783b603af4652250915676d5ce4e31bbd55e2))
 11. [Validation frontend - Entropie de mots de passe](https://www.youtube.com/watch?v=YSugfoEsKck&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/6be214fa7fad1dd49db3cf4229efca42e5b56768))
-12. A venir
+12. [Upload d'Images et Redimensionnement](https://www.youtube.com/watch?v=86V9rAQ6w9k&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/7d26a35cc9565f057754e4297f8f2140c2925322))
+13. A venir
 
 ## Maquettes
 
