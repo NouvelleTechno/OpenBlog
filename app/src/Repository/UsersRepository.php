@@ -40,20 +40,21 @@ class UsersRepository extends ServiceEntityRepository implements PasswordUpgrade
         $this->getEntityManager()->flush();
     }
 
-//    /**
-//     * @return Users[] Returns an array of Users objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('u')
-//            ->andWhere('u.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('u.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+   /**
+    * @return Users[] Returns an array of Users objects
+    */
+   public function getUsersByPosts($limit): array
+   {
+       return $this->createQueryBuilder('u')
+           ->addSelect('COUNT(p) as total')
+           ->leftJoin('u.posts', 'p')
+           ->groupBy('u.id')
+           ->orderBy('total', 'desc')
+           ->setMaxResults($limit)
+           ->getQuery()
+           ->getResult()
+       ;
+   }
 
 //    public function findOneBySomeField($value): ?Users
 //    {

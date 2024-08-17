@@ -1,9 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello{% endblock %}
+{% block title %}Accueil{% endblock %}
 
 {% block body %}
-    <h1>Titre</h1>
+    <header>
+        <div>
+            <img src="{{ asset('uploads/articles/') ~ lastPost.featuredImage }}" alt="{{ lastPost.title }}">
+        </div>
+        <div>
+            {% for category in lastPost.categories %}
+                <span>{{ category.name }}</span>
+            {% endfor %}
+        </div>
+        <h3>{{ lastPost.title }}</h3>
+        <div>{{ lastPost.content }}</div>
+        <p>{{ lastPost.users.nickname }}</p>
+    </header>
+    <main>
+        <section>
+            <h2>Derniers articles</h2>
+            {% for post in posts %}
+                <div>
+                    <img src="{{ asset('uploads/articles/mini/300x300-') ~ post.featuredImage }}" alt="{{ post.title }}">
+                </div>
+                <div>
+                    {% for category in post.categories %}
+                        <span>{{ category.name }}</span>
+                    {% endfor %}
+                </div>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.users.nickname }}</p>
+            {% endfor %}
+        </section>
+        <section>
+            <h2>Auteurs actifs</h2>
+            {% for author in authors %}
+                <h3>{{ author[0].nickname }} {{author.total}}</h3>
+            {% endfor %}
+        </section>
+    </main>
 {% endblock %}
 
 
