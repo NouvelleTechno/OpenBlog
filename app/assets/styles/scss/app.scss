@@ -1,14 +1,111 @@
 body{
     background-color: white;
+    margin: 0;
+    font-family: "Roboto", system-ui;
 }
 
 .navbar{
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    box-shadow: 0 3px 3px lightgrey;
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 0 15px;
+        height: 80px;
+        .nav-menu{
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            list-style: none;
+            padding: 0;
+            box-shadow: 0 3px 3px lightgrey;
+
+            &.show{
+                display: initial;
+            }
+            .nav-item{
+                padding: 10px 20px;
+                &:hover{
+                    background-color: rgba(101, 123, 231, 0.3);
+                }
+            }
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav-button{
+            cursor: pointer;
+        }
+    }  
 }
+
+@media screen and (min-width: 768px) {
+    .navbar{
+        .navbar-container{
+            max-width: 700px;
+            margin: auto;
+            .nav-button{
+                display: none;
+            }
+            .nav-menu{
+                display: initial;
+                position: static;
+                box-shadow: unset;
+                .nav-item{
+                    display: inline-block;
+                    line-height: 78px;
+                    border-bottom: 2px solid transparent;
+                    &:hover, &.active{
+                        background-color: unset;
+                        border-bottom: 2px solid #657be7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .navbar{
+        .navbar-container{
+            max-width: 900px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar{
+        .navbar-container{
+            max-width: 1100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .navbar{
+        .navbar-container{
+            max-width: 1400px;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .navbar{
+        .navbar-container{
+            max-width: 1700px;
+        }
+    }
+}
+
+
 
 .text{
     &-red{

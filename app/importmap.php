@@ -22,6 +22,10 @@ return [
         'path' => './assets/js/register.js',
         'entrypoint' => true,
     ],
+    'navbar' => [
+        'path' => './assets/js/navbar.js',
+        'entrypoint' => true,
+    ],
     'add-article' => [
         'path' => './assets/js/addArticle.js',
         'entrypoint' => true,

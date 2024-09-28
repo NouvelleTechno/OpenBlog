@@ -1,11 +1,33 @@
-<nav class="navbar">
-    <a href="{{ path('app_main') }}"><img src="{{ asset('assets/images/logo.png') }}" alt="Logo OpenBlog"></a>
-    <ul>
-        <li>Accueil</li>
-        <li>Articles</li>
-        <li>Catégories</li>
-        <li>Auteurs</li>
-        <li>Contact</li>
-        <li>Recherche</li>
-    </ul>
+<nav class="navbar" id="main-navbar">
+    <div class="navbar-container">
+        <a href="{{ path('app_main') }}" class="nav-logo"><img src="{{ asset('assets/images/logo.png') }}" alt="Logo OpenBlog"></a>
+        <span class="nav-button">
+            <svg viewbox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="15" rx="8"></rect>
+                <rect y="35" width="100" height="15" rx="8"></rect>
+                <rect y="70" width="100" height="15" rx="8"></rect>
+            </svg>
+        </span>
+        <ul class="nav-menu">
+            <li class="nav-item active">
+                <a href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Articles</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Catégories</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Auteurs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Recherche</a>
+            </li>
+        </ul>
+    </div>
+    
 </nav>

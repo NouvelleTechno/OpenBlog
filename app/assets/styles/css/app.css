@@ -1,15 +1,93 @@
 body {
   background-color: white;
+  margin: 0;
+  font-family: "Roboto", system-ui;
 }
 
 .navbar {
   background-color: white;
+  box-shadow: 0 3px 3px lightgrey;
+}
+.navbar .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin: 0 15px;
+  height: 80px;
+}
+.navbar .navbar-container .nav-menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  box-shadow: 0 3px 3px lightgrey;
+}
+.navbar .navbar-container .nav-menu.show {
+  display: initial;
+}
+.navbar .navbar-container .nav-menu .nav-item {
+  padding: 10px 20px;
+}
+.navbar .navbar-container .nav-menu .nav-item:hover {
+  background-color: rgba(101, 123, 231, 0.3);
+}
+.navbar .navbar-container a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.navbar .navbar-container .nav-button {
+  cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar .navbar-container {
+    max-width: 700px;
+    margin: auto;
+  }
+  .navbar .navbar-container .nav-button {
+    display: none;
+  }
+  .navbar .navbar-container .nav-menu {
+    display: initial;
+    position: static;
+    box-shadow: unset;
+  }
+  .navbar .navbar-container .nav-menu .nav-item {
+    display: inline-block;
+    line-height: 78px;
+    border-bottom: 2px solid transparent;
+  }
+  .navbar .navbar-container .nav-menu .nav-item:hover, .navbar .navbar-container .nav-menu .nav-item.active {
+    background-color: unset;
+    border-bottom: 2px solid #657be7;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar .navbar-container {
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar .navbar-container {
+    max-width: 1100px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .navbar .navbar-container {
+    max-width: 1400px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .navbar .navbar-container {
+    max-width: 1700px;
+  }
+}
 .text-red {
   color: red;
 }
