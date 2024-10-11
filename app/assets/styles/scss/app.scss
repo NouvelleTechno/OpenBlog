@@ -1,9 +1,20 @@
+@import 'variables';
+@import 'text';
+@import 'containers';
+@import 'grid';
+@import 'spacing';
+@import 'badges';
+@import 'card';
+@import 'hero';
+
 body{
     background-color: white;
     margin: 0;
     font-family: "Roboto", system-ui;
 }
-
+.clear{
+    height: 1px;
+}
 .navbar{
     background-color: white;
     box-shadow: 0 3px 3px lightgrey;
@@ -31,7 +42,7 @@ body{
             .nav-item{
                 padding: 10px 20px;
                 &:hover{
-                    background-color: rgba(101, 123, 231, 0.3);
+                    background-color: rgba($primary, 0.3);
                 }
             }
         }
@@ -64,7 +75,7 @@ body{
                     border-bottom: 2px solid transparent;
                     &:hover, &.active{
                         background-color: unset;
-                        border-bottom: 2px solid #657be7;
+                        border-bottom: 2px solid $primary;
                     }
                 }
             }

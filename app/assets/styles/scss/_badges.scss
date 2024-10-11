@@ -1,0 +1,14 @@
+.badge{
+    &.badge-primary{
+        background-color: $primary;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        padding: 4px;
+        font-weight: 700;
+    }
+    &.badge-lg{
+        font-size: 1rem;
+        padding: 5px;
+    }
+}

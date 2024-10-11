@@ -3,34 +3,36 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-    <header>
-        <div>
-            <img src="{{ asset('uploads/articles/') ~ lastPost.featuredImage }}" alt="{{ lastPost.title }}">
-        </div>
-        <div>
+    <header class="hero">
+        <img src="{{ asset('uploads/articles/') ~ lastPost.featuredImage }}" alt="{{ lastPost.title }}">
+        <div class="hero-content">
             {% for category in lastPost.categories %}
-                <span>{{ category.name }}</span>
+                <span class="badge badge-primary badge-lg">{{ category.name }}</span>
             {% endfor %}
+            <h2>{{ lastPost.title }}</h2>
+            <div class="post-content">{{ lastPost.content }}</div>
+            <p>{{ lastPost.users.nickname }}</p>
         </div>
-        <h3>{{ lastPost.title }}</h3>
-        <div>{{ lastPost.content }}</div>
-        <p>{{ lastPost.users.nickname }}</p>
     </header>
-    <main>
+    <div class="clear"></div>
+    <main class="container">
         <section>
-            <h2>Derniers articles</h2>
-            {% for post in posts %}
-                <div>
-                    <img src="{{ asset('uploads/articles/mini/300x300-') ~ post.featuredImage }}" alt="{{ post.title }}">
-                </div>
-                <div>
-                    {% for category in post.categories %}
-                        <span>{{ category.name }}</span>
-                    {% endfor %}
-                </div>
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.users.nickname }}</p>
-            {% endfor %}
+            <h2 class="text-center my-5">Derniers articles</h2>
+            <div class="grid">
+                {% for post in posts %}
+                    <article class="card">
+                        <img src="{{ asset('uploads/articles/mini/300x300-') ~ post.featuredImage }}" alt="{{ post.title }}">
+                        <div class="card-body">
+                            {% for category in post.categories %}
+                                <span class="badge badge-primary">{{ category.name }}</span>
+                            {% endfor %}
+                            <h3>{{ post.title }}</h3>
+                            <p>{{ post.users.nickname }}</p>
+                        </div>
+                    </article>
+                {% endfor %}                
+            </div>
+
         </section>
         <section>
             <h2>Auteurs actifs</h2>
