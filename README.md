@@ -51,7 +51,8 @@ Vous trouverez le **schéma de base de données** ici : https://drawsql.app/team
 13. [Accès aux données relationnelles](https://www.youtube.com/watch?v=R26QYHx_HkI&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/0673f5bd7890742480258ee8ddb3dc2b41e9eed4))
 14. [Du CSS et Sass avec la création de la barre de navigation](https://www.youtube.com/watch?v=Oc2Tq2BF8Xw&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/ff57c7c6a928e71220c9d148f7fe08ed3b3ecac3))
 15. [Du CSS et Sass avec la création de la page d'accueil](https://www.youtube.com/watch?v=nWuop5C3kbQ&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/37390971bfa77c79982219f812c804090dfe2615))
-16. A venir
+16. [Utiliser CKEditor 5 pour écrire les articles](https://www.youtube.com/watch?v=Qwubyuogcz0&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/eada883f097a1ffde37f19db35a4dd3b918bc32e))
+17. A venir
 
 ## Maquettes
 
