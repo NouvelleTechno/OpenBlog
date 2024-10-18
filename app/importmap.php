@@ -30,6 +30,10 @@ return [
         'path' => './assets/js/addArticle.js',
         'entrypoint' => true,
     ],
+    'ckeditor-init' => [
+        'path' => './assets/js/ckeditor-init.js',
+        'entrypoint' => true,
+    ],
     '@hotwired/stimulus' => [
         'version' => '3.2.2',
     ],
