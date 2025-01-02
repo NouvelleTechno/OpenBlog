@@ -473,6 +473,27 @@ header .hero-content .post-content {
   display: none;
 }
 
+.post-details-header {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+.post-details-header img {
+  border-radius: 0;
+}
+.post-details-header .hero-content {
+  left: 50%;
+  right: unset;
+  bottom: unset;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  box-shadow: unset;
+  width: 90%;
+  color: white;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   header {
     max-width: 700px;
@@ -494,6 +515,14 @@ header .hero-content .post-content {
   }
   header .hero-content .post-content {
     display: initial;
+  }
+  .post-details-header {
+    max-height: 30vh;
+  }
+  .post-details-header img {
+    max-height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block body %}
+    <header class="post-details-header">
+        <img src="{{ asset('uploads/articles/') ~ post.featuredImage }}" alt="{{ post.title }}">
+        <div class="hero-content">
+            {% for category in post.categories %}
+                <span class="badge badge-primary badge-lg">{{ category.name }}</span>
+            {% endfor %}
+            <h2>{{ post.title }}</h2>
+            {# <div class="post-content">{{ lastPost.content }}</div> #}
+            <p>{{ post.users.nickname }}</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="post-content">
+            {{ post.content|raw }}
+        </div>
+    </main>
+{% endblock %}
+
+

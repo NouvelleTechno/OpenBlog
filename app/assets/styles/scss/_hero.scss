@@ -19,6 +19,28 @@ header{
     }
 }
 
+.post-details-header{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    img{
+        border-radius: 0;
+    }
+    .hero-content{
+        left: 50%;
+        right: unset;
+        bottom: unset;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        box-shadow: unset;
+        width: 90%;
+        color: white;
+        text-align: center;
+    
+    }
+}
+
 @media screen and (min-width: 768px) {
     header{
         max-width: 700px;
@@ -42,6 +64,13 @@ header{
             .post-content{
                 display: initial;
             }
+        }
+    }
+    .post-details-header{
+        max-height: 30vh;
+        img{
+            max-height: 30vh;
+            object-fit: cover;
         }
     }
 }
