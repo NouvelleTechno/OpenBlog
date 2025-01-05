@@ -1,0 +1,20 @@
+<nav>
+    <ul class="pagination">
+        {% if currentPage > 1 %}
+            <li class="pagination-item">
+                <a href="{{ path(path, {page: currentPage - 1}) }}" class="pagination-link">&lt;</a>
+            </li>
+        {% endif %}
+        {% for page in 1..maxPage %}
+            <li class="pagination-item {{ page == currentPage ? 'active' : '' }}">
+                <a href="{{ path(path, {page: page}) }}" class="pagination-link">{{ page }}</a>
+            </li>
+        {% endfor %}
+
+        {% if currentPage < maxPage %}
+            <li class="pagination-item">
+                <a href="{{ path(path, {page: currentPage + 1}) }}" class="pagination-link">&gt;</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>

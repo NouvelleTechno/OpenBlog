@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tous les articles{% endblock %}
+
+{% block body %}
+    <main class="container">
+        <section>
+            <h2 class="text-center my-5">Tous les articles</h2>
+            <div class="grid">
+                {% for post in data.posts %}
+                    <article class="card">
+                        <img src="{{ asset('uploads/articles/mini/300x300-') ~ post.featuredImage }}" alt="{{ post.title }}">
+                        <div class="card-body">
+                            {% for category in post.categories %}
+                                <span class="badge badge-primary">{{ category.name }}</span>
+                            {% endfor %}
+                            <h3><a href="{{ path('app_posts_details', {slug: post.slug}) }}">{{ post.title }}</a></h3>
+                            <p>{{ post.users.nickname }}</p>
+                        </div>
+                    </article>
+                {% else %}
+                    <p>Il n'y a pas d'article sur cette page</p>
+                {% endfor %}                
+            </div>
+            {% if data.pages > 1 %}
+                {{ include('_partials/_pagination.html.twig', {
+                    currentPage: data.current,
+                    maxPage: data.pages,
+                    path: 'app_posts_index'
+                }) }}
+            {% endif %}
+        </section>
+    </main>
+{% endblock %}
+
+

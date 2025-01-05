@@ -540,6 +540,27 @@ header .hero-content .post-content {
     max-width: 1700px;
   }
 }
+nav .pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 5px;
+}
+nav .pagination .pagination-item {
+  border: 1px solid #a0a0a0;
+  padding: 5px;
+}
+nav .pagination .pagination-item .pagination-link {
+  text-decoration: none;
+  color: black;
+}
+nav .pagination .pagination-item.active {
+  background-color: #657ae7;
+}
+nav .pagination .pagination-item.active .pagination-link {
+  color: white;
+}
+
 body {
   background-color: white;
   margin: 0;

@@ -1,0 +1,22 @@
+nav{
+    .pagination{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        gap: 5px;
+        .pagination-item{
+            border: 1px solid $light;
+            padding: 5px;
+            .pagination-link{
+                text-decoration: none;
+                color: black;
+            }
+            &.active{
+                background-color: $primary;
+                .pagination-link{
+                    color: white;
+                }
+            }
+        }
+    }
+}
