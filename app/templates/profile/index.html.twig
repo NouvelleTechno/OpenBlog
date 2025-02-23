@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Profil de {{ app.user.nickname }}{% endblock %}
+
+{% block body %}
+    <main class="container">
+        <section>
+            <h1>Profil de {{ app.user.nickname }}</h1>
+            <h2 class="text-center my-5">Tous vos articles</h2>
+            <div class="grid">
+                {% for post in app.user.posts %}
+                    <article class="card">
+                        <img src="{{ asset('uploads/articles/mini/300x300-') ~ post.featuredImage }}" alt="{{ post.title }}">
+                        <div class="card-body">
+                            {% for category in post.categories %}
+                                <span class="badge badge-primary">{{ category.name }}</span>
+                            {% endfor %}
+                            <h3><a href="{{ path('app_posts_details', {slug: post.slug}) }}">{{ post.title }}</a></h3>
+                            <p>{{ post.users.nickname }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{{ path('app_profile_posts_edit', {id: post.id}) }}">Modifier</a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+{% endblock %}

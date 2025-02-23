@@ -55,7 +55,8 @@ Vous trouverez le **schéma de base de données** ici : https://drawsql.app/team
 17. [Upload d'images dans CKEditor 5 avec SimpleUpload](https://www.youtube.com/watch?v=jUUGsCBwIJk&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/a084ac16c30560ed001f620b8b393d735fc5c9c3))
 18. [Afficher le contenu des articles](https://www.youtube.com/watch?v=w2u-I1uD5Go&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/ad70123764830779fc80013b132890ff0537c1e6))
 19. [Liste des articles avec pagination](https://www.youtube.com/watch?v=Q7oJcTTc6xw&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/64dd22c768585d5effec3e868a585f1854a9b9cf))
-20. A venir
+20. [Gérer les Permissions et les Accès](https://www.youtube.com/watch?v=-IfkdgssfFk&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/64dd22c768585d5effec3e868a585f1854a9b9cf))
+21. A venir
 
 ## Maquettes
 

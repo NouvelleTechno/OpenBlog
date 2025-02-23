@@ -29,6 +29,11 @@
                             <h3><a href="{{ path('app_posts_details', {slug: post.slug}) }}">{{ post.title }}</a></h3>
                             <p>{{ post.users.nickname }}</p>
                         </div>
+                        {% if is_granted('POST_EDIT', post) %}
+                            <div class="card-footer">
+                                    <a href="{{ path('app_profile_posts_edit', {id: post.id}) }}">Modifier</a>
+                            </div>
+                        {% endif %}
                     </article>
                 {% endfor %}                
             </div>
