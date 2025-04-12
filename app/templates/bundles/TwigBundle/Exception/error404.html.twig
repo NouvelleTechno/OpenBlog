@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page introuvable{% endblock %}
+
+{% block body %}
+    <main class="container">
+        <h1>Page introuvable</h1>
+        <p>La page recherchée n'a pas été trouvée</p>
+        <p>Message : {{ status_text }}</p>
+        <p>Code : {{ status_code }}</p>
+        <p>Message de l'exception : {{ exception.message }}</p>
+    </main>
+{% endblock %}
+

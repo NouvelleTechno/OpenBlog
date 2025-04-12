@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accès interdit{% endblock %}
+
+{% block body %}
+    <main class="container">
+        <h1>Accès interdit</h1>
+        <p>Vous n'avez pas accès à cette zone</p>
+        <p>Message : {{ status_text }}</p>
+        <p>Code : {{ status_code }}</p>
+        <p>Message de l'exception : {{ exception.message }}</p>
+    </main>
+{% endblock %}
+
