@@ -56,7 +56,8 @@ Vous trouverez le **schéma de base de données** ici : https://drawsql.app/team
 18. [Afficher le contenu des articles](https://www.youtube.com/watch?v=w2u-I1uD5Go&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/ad70123764830779fc80013b132890ff0537c1e6))
 19. [Liste des articles avec pagination](https://www.youtube.com/watch?v=Q7oJcTTc6xw&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/64dd22c768585d5effec3e868a585f1854a9b9cf))
 20. [Gérer les Permissions et les Accès](https://www.youtube.com/watch?v=-IfkdgssfFk&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/e8e198f223b231209d0eebbdefcef86bc29eddca))
-21. A venir
+21. [Gérer les Permissions et les Accès](https://www.youtube.com/watch?v=ri6TTMIB-f4&list=PLBq3aRiVuwywmwPHz0BzPFvH0P-37mH8K) ([Commit Github](https://github.com/NouvelleTechno/OpenBlog/tree/9c9ac44c0fef9bb94554972ea8696601e2b91f86))
+2A venir
 
 ## Maquettes
 
